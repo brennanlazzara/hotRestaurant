@@ -6,7 +6,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">  
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <link rel="stylesheet" href="style.css"> 
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/82ccc8bf1e.js" crossorigin="anonymous"></script>
+    <title>Reservation</title>
 </head>
 <body>
     <div class="container">
@@ -18,7 +19,7 @@
             <div class="text-center">
                 <a href="table.html"><button class="btn btn-lg btn-primary"><span class="fa fa-list-alt"></span> View
                         Tables</button></a>
-                <a href="index.html"><button class="btn btn-lg btn-danger"><span class="fas fa-home"></span>Home</button></a>
+                <a href="index.html"><button class="btn btn-lg btn-danger"><span class="fas fa-home"></span></span>Home</button></a>
             </div>
         </div>
 
@@ -33,11 +34,11 @@
                         <div class="form-group"> <label for="name">Name</label> <input type="text"
                                 class="form-control" id="name"> </div>
                         <div class="form-group"> <label for="phoneNumber">Phone Number</label> <input type="text"
-                                class="form-control" id="role"> </div>
+                                class="form-control" id="phoneNumber"> </div>
                         <div class="form-group"> <label for="email">Email</label> <input type="text"
-                                class="form-control" id="age"> </div>
+                                class="form-control" id="email"> </div>
                         <div class="form-group"> <label for="id">ID</label> <input type="text"
-                                class="form-control" id="force-points"> </div>
+                                class="form-control" id="id"> </div>
                     </form> <br>
                     <div class="text-right"> <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span
                                 class="fa fa-fire"></span>Submit</button> </div>
@@ -46,5 +47,18 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    // Question: What does this code do?
+    $("#add-btn").on("click", function(event) {
+      event.preventDefault();
+      var newTable = {
+        customerName: $("#name").val().trim(),
+        phoneNumber: $("#phoneNumber").val().trim(),
+        customerEmail: $("#email").val().trim(),
+        customerID: $("#id").val().trim()
+      };
+    });
+  </script>
 </body>
 </html>
