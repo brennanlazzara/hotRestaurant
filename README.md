@@ -3,9 +3,6 @@
 This is composed of Index.html, app.js, style.css
 This is a restaurant application that can view tables and create reservations
 
-## VIDEO OF THE APPLICATION!
-![GIF](https://media.giphy.com/media/QZtNqQvnZjkWYk9O02/giphy.gif)
-
 ## Github pages 
 
 This is where the main website will be launched 
